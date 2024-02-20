@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYM Management System</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="loginForm">
+    <h2>Login</h2>
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="adminPanel" class="hidden">
+    <!-- Admin panel content -->
+  </div>
+
+  <div id="userPanel" class="hidden">
+    <!-- User panel content -->
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
